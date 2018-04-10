@@ -75,7 +75,7 @@ template<typename T>
 MyQueue<T>::MyQueue(int queueCapacity)
 {
 	m_iQueueCapacity = queueCapacity;
-	m_pQueue = new Customer[m_iQueueCapacity];
+	m_pQueue = new T[m_iQueueCapacity];
 	ClearQueue();
 }
 
